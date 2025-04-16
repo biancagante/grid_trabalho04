@@ -9,16 +9,14 @@
 </head>
 <body>
     <header>
-        <nav>
-            <a href="" class="logo__text">Floricultura</a>
+        <nav class="navbar">
+            <a href="#" class="logo__text" aria-label="Página inicial">Floricultura</a>
             <div class="nav__center">
-                <a href="" class="nav__link">Home</a>
-                <a href="" class="nav__link">Sobre Nós</a>
-                <a href="" class="nav__link">Bouquets e Vasos</a>
-                <a href="" class="nav__link">Serviços</a>
-                <a href="" class="nav__link">Contato</a>
+                <a href="#sobreNos" class="nav__link">Sobre Nós</a>
+                <a href="#servicos" class="nav__link">Serviços</a>
+                <a href="#produtos" class="nav__link">Buquês e Vasos</a>
+                <a href="#formContato" class="nav__link">Contato</a>
             </div>
-            <a href="">Converse conosco</a>
         </nav>
         <div class="container__home">
             <h1>Transforme momentos em memórias com flores inesquecíveis.</h1>
@@ -28,33 +26,22 @@
         </div>
     </header>
     <main>
-        <section class="sobreNos">
+        <section class="sobreNos" id="sobreNos">
             <h2>Sobre Nós</h2>
             <p>
                 Somos apaixonados por flores e por criar experiências únicas. Nossa floricultura oferece arranjos personalizados, entregues com amor e dedicação. Cada flor conta uma história, e estamos aqui para ajudar você a contar a sua.
-            </p>
-            <p>
                 Com uma equipe de floristas experientes, garantimos qualidade e frescor em cada entrega. Nossos produtos são selecionados com cuidado, para que você possa expressar seus sentimentos da melhor forma possível.
-        </p>
+            </p>
+            <h2>Produtos e datas populares</h2>
+            <div class="grid__datas">
+                <div class="item__data">Vasos e arranjos</div>
+                <div class="item__data">Buquês de casamento</div>
+                <div class="item__data linha">Dia dos Namorados</div>
+                <div class="item__data">Dia das Mães</div>
+                <div class="item__data">Dia das Mulheres</div>
+            </div>
         </section>
-        <section class="produtos">
-            <div class="flores__produtos">
-                <img src="https://www.uniflores.com.br/media/catalog/product/cache/1/small_image/300x300/9df78eab33525d08d6e5fb8d27136e95/b/u/buques.jpg" alt="">
-                <h3>Buquê de Rosas</h3>
-                <p>Um clássico atemporal, perfeito para qualquer ocasião.</p>
-                <button>Comprar</button>
-            </div>
-            <div class="flores__produtos">
-                <img src="https://www.uniflores.com.br/media/catalog/product/cache/1/small_image/300x300/9df78eab33525d08d6e5fb8d27136e95/b/u/buque-dia-radiante-2_1.jpg" alt="">
-            </div>
-            <div class="flores__produtos">
-                <img src="https://www.uniflores.com.br/media/catalog/product/cache/1/small_image/300x300/9df78eab33525d08d6e5fb8d27136e95/b/u/buque-charme-em-rosas2.jpg" alt="">
-            </div>
-            <div class="flores__produtos"></div>
-            <div class="flores__produtos"></div>
-            <div class="flores__produtos"></div>
-        </section>
-        <section class="servicos">
+        <section class="servicos" id="servicos">
             <div class="entrega">
                 <img src="https://cdn-icons-png.flaticon.com/512/1950/1950321.png" alt="Ícone de um caminhão de entrega veloz">
                 <strong>Flores fresquinhas, direto na porta</strong>
@@ -77,6 +64,98 @@
                 </p>
             </div>
         </section>
+        <section class="produtos" id="produtos">
+            <div class="flores__produtos">
+                <img src="https://www.uniflores.com.br/media/catalog/product/cache/1/small_image/300x300/9df78eab33525d08d6e5fb8d27136e95/b/u/buque-dia-radiante-2_1.jpg" alt="Buquê Dia Radiante">
+                <h3>Buquê Para um Dia Radiante</h3>
+                <p>Composto por flores amarelas e brancas, como rosas e alstroemérias, este buquê transmite alegria e felicidade. Preço promocional: R$156,90.</p>
+                <button>Comprar</button>
+            </div>
+            <div class="flores__produtos">
+                <img src="https://www.uniflores.com.br/media/catalog/product/cache/1/small_image/300x300/9df78eab33525d08d6e5fb8d27136e95/b/u/buque-charme-em-rosas2.jpg" alt="Buquê Charme em Rosas">
+                <h3>Buquê Charme em Rosas</h3>
+                <p>Este buquê é composto por 6 rosas cor de rosa e alstroemérias brancas.</p>
+                <span>Preço promocional: R$148,90.</span>
+                <button>Comprar</button>
+            </div>
+            <div class="flores__produtos">
+                <img src="https://www.uniflores.com.br/media/catalog/product/cache/1/small_image/300x300/9df78eab33525d08d6e5fb8d27136e95/b/u/buque-nobile-novo1.jpg" alt="Buquê Romântico">
+                <h3>Buquê Romântico Rosas</h3>
+                <p>Composto por 10 rosas e um ursinho de pelúcia, este buquê é ideal para expressar carinho e romantismo.</p>
+                <span>Preço promocional: R$179,90.</span>
+                <button>Comprar</button>
+            </div>
+            <div class="flores__produtos">
+                <img src="https://www.uniflores.com.br/media/catalog/product/cache/1/small_image/300x300/9df78eab33525d08d6e5fb8d27136e95/b/u/buque-tradition-12-colorido_1.jpg" alt="Buquê Delicado">
+                <h3>Buquê de Flores Amores</h3>
+                <p>Este buquê é composto por 12 rosas e acompanha bombons, perfeito para ocasiões especiais.</p>
+                <span>Preço promocional: R$239,90.</span>
+                <button>Comprar</button>
+            </div>
+            <div class="flores__produtos">
+                <img src="https://www.uniflores.com.br/media/catalog/product/cache/1/small_image/300x300/9df78eab33525d08d6e5fb8d27136e95/b/u/buqu_-flores-do-campo-luxo.jpg" alt="Buquê Encantador">
+                <h3>Buquê de Flores Colorido</h3>
+                <p>Composto por rosas vermelhas e folhagens, este buquê é ideal para expressar amor e paixão.</p>
+                <span>Preço promocional: R$215,90.</span>
+                <button>Comprar</button>
+            </div>
+            <div class="flores__produtos">
+                <img src="https://www.uniflores.com.br/media/catalog/product/cache/1/small_image/300x300/9df78eab33525d08d6e5fb8d27136e95/b/u/buques.jpg" alt="Buquê Clássico">
+                <h3>Buquê de Flores Tradition</h3>
+                <p>Composto por 12 rosas, este buquê é clássico e elegante, perfeito para qualquer ocasião.</p>
+                <span>Preço promocional: R$149,90.</span>
+                <button>Comprar</button>
+            </div>
+            <div class="flores__produtos">
+                <img src="https://www.uniflores.com.br/media/catalog/product/cache/1/small_image/300x300/9df78eab33525d08d6e5fb8d27136e95/o/r/orquideas-maes1_1.jpg" alt="Vaso de Orquídea Branca">
+                <h3>Vaso Orquídea Phalaenopsis Branca</h3>
+                <p>Uma elegante orquídea branca, perfeita para decorar e presentear.</p>
+                <span>Preço: R$184,17.</span>
+                <button>Comprar</button>
+            </div>
+            <div class="flores__produtos">
+                <img src="https://www.uniflores.com.br/media/catalog/product/cache/1/small_image/300x300/9df78eab33525d08d6e5fb8d27136e95/o/r/orquidealilasb2_1.jpg" alt="Vaso de Orquídea Lílas">
+                <h3>Vaso Orquídea Lilás</h3>
+                <p>Uma delicada orquídea lilás, ideal para presentear e decorar.</p>
+                <span>Preço: R$184,17.</span>
+                <button>Comprar</button>
+            </div>
+            <div class="flores__produtos">
+                <img src="https://www.uniflores.com.br/media/catalog/product/cache/1/small_image/300x300/9df78eab33525d08d6e5fb8d27136e95/h/a/harmonia-em-alstroemerias_2.jpg" alt="Vaso de Alstroemérias">
+                <h3>Arranjo de Alstroemérias</h3>
+                <p>Um arranjo vibrante de alstroemérias coloridas, perfeito para alegrar qualquer ambiente.</p>
+                <span>Preço: R$131,01.</span>
+                <button>Comprar</button>
+            </div>
+            <div class="flores__produtos">
+                <img src="https://www.uniflores.com.br/media/catalog/product/cache/1/small_image/300x300/9df78eab33525d08d6e5fb8d27136e95/a/r/arranjo-de-flores-sinfonia-em-amarelo1.jpg" alt="Vaso de flores amarelas">
+                <h3>Arranjo de Flores Amarelo</h3>
+                <p>Um arranjo encantador de flores amarelas, ideal para iluminar o dia de alguém especial. Preço: R$131,01.</p>
+                <button>Comprar</button>
+            </div>
+        </section>
+        <section class="formularioContato">
+            <form id="formContato">
+            <fieldset>
+                <legend>Entre em contato:</legend>
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="nome" required maxlength="45">
+                    <label for="email">E-mail:</label>
+                    <input type="email" name="email" id="emailParaContato" placeholder="seu_email@gmail.com" required autofocus>
+                <label>Mensagem:</label>
+                <textarea name="msgUsuario" id="mensagemTexto" rows="6" cols="100" maxlength="800"></textarea>
+                <button type="submit">Mandar mensagem</button>
+            </fieldset>
+        </form>
+        </section>
     </main>
+    <footer>
+        <h2>Entre em contato por:</h2>
+        <div class="icones__redes">
+            <img src="https://cdn-icons-png.flaticon.com/128/717/717392.png" alt="Ícone do instagram">
+            <img src="https://cdn-icons-png.flaticon.com/128/12940/12940242.png" alt="Ícone do facebook">
+            <img src="https://cdn-icons-png.flaticon.com/128/2582/2582600.png" alt="Ícone do whatsapp">
+        </div>
+    </footer>
 </body>
 </html>

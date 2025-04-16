@@ -17,12 +17,15 @@ header {
 }
 
 nav {
-    padding: 2vw;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 1vw;
     display: flex;
     gap: 6vw;
     align-items: center;
     justify-content: space-evenly;
     position: sticky;
+    z-index: 20;
+    top: 0;
 }
 
 a {
@@ -85,6 +88,7 @@ a {
     gap: 1vw;
     border-radius: 8px;
     text-align: center;
+    border: solid 1px grey;
 }
 
 .servicos div strong {
@@ -97,7 +101,8 @@ a {
 }
 
 main {
-    background-color: pink;
+    background-color: #fafafa;
+    padding: 2vw;
 }
 
 .produtos {
@@ -109,16 +114,17 @@ main {
 }
 
 .flores__produtos {
-    width: 16%;
+    width: 17%;
     flex-wrap: wrap;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
+    gap: .5vw;
     background-color: white;
     padding: 1vw;
-    gap: .7vw;
     border-radius: 8px;
     font-size: .7rem;
+    border: solid 1px grey;
 }
 
 .flores__produtos img {
@@ -134,4 +140,206 @@ main {
     background-color: #590d22;
     color: white;
     border-radius: 3px;
+}
+
+.sobreNos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5vw;
+    text-indent: 2vw;
+    gap: 1vw;
+}
+
+span {
+    color: green;
+}
+
+form {
+  background-color: #fafafa;
+  margin: 4vw;
+  border-radius: 8px;
+  padding: 2vw;
+  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+}
+
+form fieldset {
+  border: none;
+}
+
+form legend {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+}
+
+form input[type="text"], form input[type="email"], form select, form textarea {
+  width: 100%;
+  padding: 1vw;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 15px;
+}
+
+form button {
+  background-color: #dd6199;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #f72585;
+}
+
+footer {
+    background-color: #590d22;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3vw;
+    gap: 1vw;
+}
+
+.icones__redes {
+    display: flex;
+    gap: 2vw;
+}
+
+footer h2, footer img {
+    filter: invert(100%);
+    display: flex;
+}
+
+footer img {
+    width: 3vw;
+    object-fit: cover;
+}
+
+.grid__datas {
+    width: 100%;
+    display: grid;
+    flex-wrap: wrap;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 15vw 10vw;
+    margin: 1vw;
+    gap: 1vw;
+}
+
+.item__data {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: pink;
+    border-radius: 4px;
+    font-size: larger;
+    padding: 2vw;
+    font-family: 'IBM Plex Serif';
+}
+
+.linha {
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+@media (max-width: 575px) {
+    nav {
+        flex-direction: column;
+        gap: 2vw;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .nav__center {
+        flex-direction: column;
+        gap: 2vw;
+    }
+
+    .container__home {
+        width: 100%;
+        height: auto;
+        padding: 10vw 5vw;
+        gap: 4vw;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .container__home h1 {
+        font-size: 1.8rem;
+    }
+
+    .container__home p {
+        font-size: 1rem;
+    }
+
+    .servicos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .servicos div {
+        width: 80%;
+        padding: 4vw;
+    }
+
+    .servicos img {
+        width: 40%;
+    }
+
+    .produtos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .flores__produtos {
+        width: 80%;
+        font-size: 1rem;
+        padding: 3vw;
+        gap: 2vw;
+    }
+
+    .flores__produtos img {
+        width: 60%;
+    }
+    
+    .flores__produtos button {
+        padding: 2vw;
+    }
+
+    form {
+        margin: 5vw 2vw;
+        padding: 5vw;
+    }
+
+    .grid__datas {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, auto);
+    }
+
+    .coluna {
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+    .linha {
+        grid-row: auto;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+    footer {
+        padding: 6vw 3vw;
+    }
+
+    .icones__redes {
+        gap: 5vw;
+    }
+
+    footer img {
+        width: 8vw;
+    }
 }
