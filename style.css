@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Manrope:wght@200..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope';
+    font-weight: 700;
+}
+
+header {
+    width: 100%;
+    height: 90vh;
+    background-image: url('https://img.freepik.com/free-photo/flat-lay-gift-concept_23-2148102912.jpg?t=st=1744747744~exp=1744751344~hmac=bc2b3723b96d4dbe4628408192971bbb7e054d229dd2c151983a192a8992e6c9&w=996');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+nav {
+    padding: 2vw;
+    display: flex;
+    gap: 6vw;
+    align-items: center;
+    justify-content: space-evenly;
+    position: sticky;
+}
+
+a {
+    color: #590d22;
+    text-decoration: none;
+}
+
+.logo__text {
+    color: #ff0a54;
+    font-weight: 600;
+    font-family: 'Playfair Display';
+    font-size: 1.6rem;
+}
+
+.nav__center {
+    display: flex;
+    gap: 3vw;
+}
+
+.container__home {
+    padding: 10%;
+    width: 50%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    justify-content: center;
+}
+
+.container__home h1 {
+    font-size: 2.5rem;
+    font-family: 'IBM Plex Serif';
+}
+
+.container__home p {
+    font-size: 1.1rem;
+}
+
+.servicos {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+    padding: 3vw;
+}
+
+.servicos img {
+    width: 20%;
+}
+
+.servicos div {
+    display: flex;
+    width: 30%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(999, 999, 999, 0.5);
+    padding: 2vw;
+    gap: 1vw;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.servicos div strong {
+    font-size: 1.5rem;
+    font-family: 'IBM Plex Serif';
+}
+
+.servicos {
+    font-size: smaller;
+}
+
+main {
+    background-color: pink;
+}
+
+.produtos {
+    padding: 3vw;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2vw;
+}
+
+.flores__produtos {
+    width: 16%;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    padding: 1vw;
+    gap: .7vw;
+    border-radius: 8px;
+    font-size: .7rem;
+}
+
+.flores__produtos img {
+    width: 70%;
+    display: flex;
+    align-self: center;
+    margin: 1vw
+}
+
+.flores__produtos button {
+    padding: .5vw 1vw;
+    border: none;
+    background-color: #590d22;
+    color: white;
+    border-radius: 3px;
+}
